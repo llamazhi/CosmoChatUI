@@ -4,9 +4,8 @@ import Activity from './pages/Activity';
 import MessagePanel from './pages/MessagePanel';
 import CIcon from '@coreui/icons-react';
 import { cilBarChart, cilHome } from '@coreui/icons';
-import { Link } from 'react-router-dom';
-import { Container} from '@mui/material';
 import Nav from 'react-bootstrap/Nav';
+import ChatSession from './pages/ChatSession';
 
 function App() {
   return (
@@ -22,6 +21,7 @@ function App() {
       <Routes>
         <Route path='/' element={<MessagePanel />}/>
         <Route path='/activity' element={<Activity />} />
+        <Route path='/chat' element={<ChatSession />}/>
       </Routes>
     </Router>
   );
